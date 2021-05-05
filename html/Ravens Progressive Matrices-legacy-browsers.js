@@ -1,6 +1,6 @@
-﻿/************************************* 
- * Raven'S Progressive Matrices Test *
- *************************************/
+﻿/************************************ 
+ * Ravens Progressive Matrices Test *
+ ************************************/
 
 // init psychoJS:
 const psychoJS = new PsychoJS({
@@ -16,7 +16,7 @@ psychoJS.openWindow({
 });
 
 // store info about the experiment session:
-let expName = 'Raven's Progressive Matrices';  // from the Builder filename that created this script
+let expName = 'Ravens Progressive Matrices';  // from the Builder filename that created this script
 let expInfo = {'participant': '', 'session': '001'};
 
 // Start code blocks for 'Before Experiment'
@@ -51,73 +51,12 @@ dialogCancelScheduler.add(quitPsychoJS, '', false);
 psychoJS.start({
   expName: expName,
   expInfo: expInfo,
-  resources: [
-    {'name': '3.jpg', 'path': '3.jpg'},
-    {'name': '57.jpg', 'path': '57.jpg'},
-    {'name': '6.jpg', 'path': '6.jpg'},
-    {'name': '55.jpg', 'path': '55.jpg'},
-    {'name': '52.jpg', 'path': '52.jpg'},
-    {'name': '51.jpg', 'path': '51.jpg'},
-    {'name': '15.jpg', 'path': '15.jpg'},
-    {'name': '42.jpg', 'path': '42.jpg'},
-    {'name': '25.jpg', 'path': '25.jpg'},
-    {'name': '58.jpg', 'path': '58.jpg'},
-    {'name': '10.jpg', 'path': '10.jpg'},
-    {'name': '9.jpg', 'path': '9.jpg'},
-    {'name': '7.jpg', 'path': '7.jpg'},
-    {'name': '22.jpg', 'path': '22.jpg'},
-    {'name': '45.jpg', 'path': '45.jpg'},
-    {'name': '23.jpg', 'path': '23.jpg'},
-    {'name': '38.jpg', 'path': '38.jpg'},
-    {'name': '11.jpg', 'path': '11.jpg'},
-    {'name': '21.jpg', 'path': '21.jpg'},
-    {'name': '53.jpg', 'path': '53.jpg'},
-    {'name': '32.jpg', 'path': '32.jpg'},
-    {'name': '46.jpg', 'path': '46.jpg'},
-    {'name': '56.jpg', 'path': '56.jpg'},
-    {'name': '44.jpg', 'path': '44.jpg'},
-    {'name': '29.jpg', 'path': '29.jpg'},
-    {'name': '28.jpg', 'path': '28.jpg'},
-    {'name': '41.jpg', 'path': '41.jpg'},
-    {'name': '19.jpg', 'path': '19.jpg'},
-    {'name': '27.jpg', 'path': '27.jpg'},
-    {'name': '26.jpg', 'path': '26.jpg'},
-    {'name': '48.jpg', 'path': '48.jpg'},
-    {'name': '60.jpg', 'path': '60.jpg'},
-    {'name': '34.jpg', 'path': '34.jpg'},
-    {'name': '39.jpg', 'path': '39.jpg'},
-    {'name': '13.jpg', 'path': '13.jpg'},
-    {'name': '17.jpg', 'path': '17.jpg'},
-    {'name': '31.jpg', 'path': '31.jpg'},
-    {'name': '2.jpg', 'path': '2.jpg'},
-    {'name': '49.jpg', 'path': '49.jpg'},
-    {'name': '30.jpg', 'path': '30.jpg'},
-    {'name': '35.jpg', 'path': '35.jpg'},
-    {'name': '5.jpg', 'path': '5.jpg'},
-    {'name': '59.jpg', 'path': '59.jpg'},
-    {'name': '12.jpg', 'path': '12.jpg'},
-    {'name': '40.jpg', 'path': '40.jpg'},
-    {'name': 'RPM_items.xlsx', 'path': 'RPM_items.xlsx'},
-    {'name': '47.jpg', 'path': '47.jpg'},
-    {'name': '33.jpg', 'path': '33.jpg'},
-    {'name': '16.jpg', 'path': '16.jpg'},
-    {'name': '36.jpg', 'path': '36.jpg'},
-    {'name': '1.jpg', 'path': '1.jpg'},
-    {'name': '4.jpg', 'path': '4.jpg'},
-    {'name': '54.jpg', 'path': '54.jpg'},
-    {'name': '50.jpg', 'path': '50.jpg'},
-    {'name': '18.jpg', 'path': '18.jpg'},
-    {'name': '24.jpg', 'path': '24.jpg'},
-    {'name': '8.jpg', 'path': '8.jpg'},
-    {'name': '14.jpg', 'path': '14.jpg'},
-    {'name': '43.jpg', 'path': '43.jpg'},
-    {'name': '37.jpg', 'path': '37.jpg'},
-    {'name': '20.jpg', 'path': '20.jpg'}
-  ]
-});
+  });
 
 psychoJS.experimentLogger.setLevel(core.Logger.ServerLevel.EXP);
 
+
+var frameDur;
 function updateInfo() {
   expInfo['date'] = util.MonotonicClock.getDateStr();  // add a simple timestamp
   expInfo['expName'] = expName;
@@ -137,6 +76,26 @@ function updateInfo() {
   return Scheduler.Event.NEXT;
 }
 
+
+var instrClock;
+var instr_text;
+var cont_text;
+var instr_resp;
+var thisExp;
+var win;
+var event;
+var shuffle;
+var trialClock;
+var image;
+var key_resp;
+var score;
+var wrongAnswer;
+var doneClock;
+var done_text;
+var key_resp_2;
+var end_text;
+var globalClock;
+var routineTimer;
 function experimentInit() {
   // Initialize components for Routine "instr"
   instrClock = new util.Clock();
@@ -164,6 +123,10 @@ function experimentInit() {
   
   instr_resp = new core.Keyboard({psychoJS: psychoJS, clock: new util.Clock(), waitForStart: true});
   
+  thisExp = psychoJS.experiment
+  win = psychoJS.window
+  event = psychoJS.eventManager
+  shuffle = util.shuffle
   // Initialize components for Routine "trial"
   trialClock = new util.Clock();
   image = new visual.ImageStim({
@@ -213,6 +176,12 @@ function experimentInit() {
   return Scheduler.Event.NEXT;
 }
 
+
+var t;
+var frameN;
+var continueRoutine;
+var _instr_resp_allKeys;
+var instrComponents;
 function instrRoutineBegin(snapshot) {
   return function () {
     //------Prepare to start Routine 'instr'-------
@@ -237,6 +206,7 @@ function instrRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function instrRoutineEachFrame(snapshot) {
   return function () {
@@ -315,6 +285,7 @@ function instrRoutineEachFrame(snapshot) {
   };
 }
 
+
 function instrRoutineEnd(snapshot) {
   return function () {
     //------Ending Routine 'instr'-------
@@ -330,6 +301,9 @@ function instrRoutineEnd(snapshot) {
   };
 }
 
+
+var trials;
+var currentLoop;
 function trialsLoopBegin(trialsLoopScheduler) {
   // set up handler to look after randomisation of conditions etc
   trials = new TrialHandler({
@@ -356,12 +330,16 @@ function trialsLoopBegin(trialsLoopScheduler) {
   return Scheduler.Event.NEXT;
 }
 
+
 function trialsLoopEnd() {
   psychoJS.experiment.removeLoop(trials);
 
   return Scheduler.Event.NEXT;
 }
 
+
+var _key_resp_allKeys;
+var trialComponents;
 function trialRoutineBegin(snapshot) {
   return function () {
     //------Prepare to start Routine 'trial'-------
@@ -386,6 +364,7 @@ function trialRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function trialRoutineEachFrame(snapshot) {
   return function () {
@@ -460,6 +439,7 @@ function trialRoutineEachFrame(snapshot) {
   };
 }
 
+
 function trialRoutineEnd(snapshot) {
   return function () {
     //------Ending Routine 'trial'-------
@@ -502,6 +482,9 @@ function trialRoutineEnd(snapshot) {
   };
 }
 
+
+var _key_resp_2_allKeys;
+var doneComponents;
 function doneRoutineBegin(snapshot) {
   return function () {
     //------Prepare to start Routine 'done'-------
@@ -526,6 +509,7 @@ function doneRoutineBegin(snapshot) {
     return Scheduler.Event.NEXT;
   }
 }
+
 
 function doneRoutineEachFrame(snapshot) {
   return function () {
@@ -604,6 +588,7 @@ function doneRoutineEachFrame(snapshot) {
   };
 }
 
+
 function doneRoutineEnd(snapshot) {
   return function () {
     //------Ending Routine 'done'-------
@@ -618,6 +603,7 @@ function doneRoutineEnd(snapshot) {
     return Scheduler.Event.NEXT;
   };
 }
+
 
 function endLoopIteration(scheduler, snapshot) {
   // ------Prepare for next entry------
@@ -641,6 +627,7 @@ function endLoopIteration(scheduler, snapshot) {
   };
 }
 
+
 function importConditions(currentLoop) {
   return function () {
     psychoJS.importAttributes(currentLoop.getCurrentTrial());
@@ -648,11 +635,14 @@ function importConditions(currentLoop) {
     };
 }
 
+
 function quitPsychoJS(message, isCompleted) {
   // Check for and save orphaned data
   if (psychoJS.experiment.isEntryEmpty()) {
     psychoJS.experiment.nextEntry();
   }
+  
+  
   
   
   psychoJS.window.close();
