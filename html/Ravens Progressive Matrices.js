@@ -481,6 +481,7 @@ function trialRoutineEnd(snapshot) {
     }
     if ((wrongAnswer === 3)) {
         trials.finished = true;
+        thisExp.addData("totalScore", score);
     }
     
     // the Routine "trial" was not non-slip safe, so reset the non-slip timer

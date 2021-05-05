@@ -1,0 +1,36 @@
+5.0693 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002150FAE7C88>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002150FAC13C8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.0698 	EXP 	window1: mouseVisible = True
+5.0698 	EXP 	window1: recordFrameIntervals = False
+5.2358 	EXP 	window1: recordFrameIntervals = True
+5.4193 	EXP 	window1: recordFrameIntervals = False
+5.5651 	EXP 	Created instr_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='instr_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+5.5712 	EXP 	Created cont_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='cont_text', opacity=1, ori=0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Press SPACE to begin.', units='height', win=Window(...), wrapWidth=1)
+5.5751 	EXP 	Created image = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='image', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([1., 1.]), texRes=128, units='height', win=Window(...))
+5.5826 	EXP 	Created done_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='done_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='Good work!\n\nYou have completed this task.', units='height', win=Window(...), wrapWidth=1)
+5.5852 	EXP 	Created end_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1, 1, 1]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='end_text', opacity=1, ori=0, pos=array([ 0. , -0.4]), rgb=UNKNOWN, text='Press SPACE to continue.', units='height', win=Window(...), wrapWidth=1)
+5.6661 	EXP 	instr_text: autoDraw = True
+5.6661 	EXP 	cont_text: autoDraw = True
+6.4824 	EXP 	Imported RPM_items.xlsx as conditions, 60 conditions, 3 params
+6.4827 	EXP 	Created sequence: sequential, trialTypes=60, nReps=1, seed=None
+6.4829 	EXP 	New trial (rep=0, index=0): {'index': 0, 'image_file': '1.jpg', 'correct': 4}
+6.5263 	DATA 	Keypress: space
+6.5357 	EXP 	instr_text: autoDraw = False
+6.5357 	EXP 	cont_text: autoDraw = False
+6.5357 	EXP 	image: image = '1.jpg'
+6.5357 	EXP 	image: autoDraw = True
+8.1753 	EXP 	New trial (rep=0, index=1): {'index': 1, 'image_file': '2.jpg', 'correct': 5}
+8.2373 	DATA 	Keypress: 1
+8.2525 	EXP 	image: autoDraw = False
+8.2525 	EXP 	image: image = '2.jpg'
+8.2525 	EXP 	image: autoDraw = True
+8.5408 	DATA 	Keypress: 2
+8.5565 	EXP 	New trial (rep=0, index=2): {'index': 2, 'image_file': '3.jpg', 'correct': 1}
+8.6192 	EXP 	image: autoDraw = False
+8.6192 	EXP 	image: image = '3.jpg'
+8.6192 	EXP 	image: autoDraw = True
+8.9473 	DATA 	Keypress: 3
+8.9523 	EXP 	image: autoDraw = False
+8.9523 	EXP 	done_text: autoDraw = True
+8.9523 	EXP 	end_text: autoDraw = True
+9.7573 	DATA 	Keypress: escape
+9.9629 	EXP 	window1: mouseVisible = True

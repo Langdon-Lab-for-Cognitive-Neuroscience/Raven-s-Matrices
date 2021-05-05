@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.1),
-    on May 05, 2021, at 18:15
+    on May 05, 2021, at 18:40
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -355,6 +355,8 @@ for thisTrial in trials:
         wrongAnswer +=1
     if wrongAnswer == 3:
         trials.finished = True
+        
+        thisExp.addData('totalScore', score)
     # the Routine "trial" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()

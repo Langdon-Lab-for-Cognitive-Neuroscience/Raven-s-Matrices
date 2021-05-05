@@ -90,8 +90,8 @@
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End JS Routine" updates="constant" val="if ((key_resp.corr === 1)) {&amp;#10;    score = (score + 1);&amp;#10;    wrongAnswer = 0;&amp;#10;} else {&amp;#10;    wrongAnswer += 1;&amp;#10;}&amp;#10;if ((wrongAnswer === 3)) {&amp;#10;    trials.finished = true;&amp;#10;}&amp;#10;" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="if key_resp.corr == 1:&amp;#10;    score = score + 1&amp;#10;    wrongAnswer = 0&amp;#10;else:&amp;#10;    wrongAnswer +=1&amp;#10;if wrongAnswer == 3:&amp;#10;    trials.finished = True" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="if ((key_resp.corr === 1)) {&amp;#10;    score = (score + 1);&amp;#10;    wrongAnswer = 0;&amp;#10;} else {&amp;#10;    wrongAnswer += 1;&amp;#10;}&amp;#10;if ((wrongAnswer === 3)) {&amp;#10;    trials.finished = true;&amp;#10;    thisExp.addData(&quot;totalScore&quot;, score);&amp;#10;}&amp;#10;" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="if key_resp.corr == 1:&amp;#10;    score = score + 1&amp;#10;    wrongAnswer = 0&amp;#10;else:&amp;#10;    wrongAnswer +=1&amp;#10;if wrongAnswer == 3:&amp;#10;    trials.finished = True&amp;#10;    &amp;#10;    thisExp.addData('totalScore', score)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code" valType="code"/>
       </CodeComponent>
