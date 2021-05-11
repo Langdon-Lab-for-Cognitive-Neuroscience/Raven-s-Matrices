@@ -1,0 +1,7 @@
+key_resp.keys,key_resp.corr,key_resp.rt,totalScore,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,index,image_file,correct,participant,session,date,expName,psychopyVersion,OS,frameRate
+4,1,5.47,1,0,0,0,0,1,0,1.jpg,4,test,001,2021-05-11_15h28.38.453,Ravens Progressive Matrices,2021.1.1,MacIntel,62.5
+5,1,4.331,2,0,1,1,1,1,1,2.jpg,5,test,001,2021-05-11_15h28.38.453,Ravens Progressive Matrices,2021.1.1,MacIntel,62.5
+1,1,2.557,3,0,2,2,2,1,2,3.jpg,1,test,001,2021-05-11_15h28.38.453,Ravens Progressive Matrices,2021.1.1,MacIntel,62.5
+3,0,2.612,3,0,3,3,3,1,3,4.jpg,2,test,001,2021-05-11_15h28.38.453,Ravens Progressive Matrices,2021.1.1,MacIntel,62.5
+4,0,1.541,3,0,4,4,4,1,4,5.jpg,6,test,001,2021-05-11_15h28.38.453,Ravens Progressive Matrices,2021.1.1,MacIntel,62.5
+2,0,0.713,3,0,5,5,5,1,5,6.jpg,3,test,001,2021-05-11_15h28.38.453,Ravens Progressive Matrices,2021.1.1,MacIntel,62.5
