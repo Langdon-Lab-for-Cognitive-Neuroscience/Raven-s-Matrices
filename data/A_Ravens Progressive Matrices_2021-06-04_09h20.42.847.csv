@@ -1,0 +1,4 @@
+key_resp.keys,key_resp.corr,key_resp.rt,totalScore,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,index,image_file,correct,participant,session,date,expName,psychopyVersion,OS,frameRate
+6,0,33.64502,0,0,0,0,0,1,0,1.jpg,4,A,001,2021-06-04_09h20.42.847,Ravens Progressive Matrices,2021.1.1,Win32,59.84440455
+5,1,7.840595,1,0,1,1,1,1,1,2.jpg,5,A,001,2021-06-04_09h20.42.847,Ravens Progressive Matrices,2021.1.1,Win32,59.84440455
+1,1,4.50183,2,0,2,2,2,1,2,3.jpg,1,A,001,2021-06-04_09h20.42.847,Ravens Progressive Matrices,2021.1.1,Win32,59.84440455
