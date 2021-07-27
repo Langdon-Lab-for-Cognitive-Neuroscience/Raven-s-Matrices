@@ -1,0 +1,2 @@
+key_resp.keys,key_resp.corr,key_resp.rt,totalScore,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,index,image_file,correct,participant,session,date,expName,psychopyVersion,OS,frameRate
+4,1,10.9432,1,0,0,0,0,1,0,1.jpg,4,test,001,2021-07-27_12h46.27.159,Ravens Progressive Matrices,2021.1.1,MacIntel,60.0024001
